@@ -1,0 +1,492 @@
+[23-Dec-2021 18:48:14 Africa/Nairobi] PHP Notice:  include(): read of 1822 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[23-Dec-2021 18:48:14 Africa/Nairobi] PHP Warning:  include(): Failed opening '/home/mixqxmsv/public_html/local/vendor/composer/../vlucas/phpdotenv/src/Repository/Adapter/EnvConstAdapter.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[23-Dec-2021 18:48:14 Africa/Nairobi] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('config')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('config')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/mixqxmsv/public_html/local/vendor/larave in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[05-Jan-2022 10:42:52 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 108836 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Carbon\\Traits\\D...')
+#4 /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php(510): spl_autoload_call('Carbon\\Traits\\D...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\i in /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 510
+[05-Jan-2022 10:42:53 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 96548 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Carbon\\Traits\\D...')
+#4 /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php(510): spl_autoload_call('Carbon\\Traits\\D...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile(' in /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 510
+[05-Jan-2022 17:26:10 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 108836 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Carbon\\Traits\\D...')
+#4 /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php(510): spl_autoload_call('Carbon\\Traits\\D...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile( in /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 510
+[05-Jan-2022 17:26:10 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 6436 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Carbon\\Traits\\D...')
+#4 /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php(510): spl_autoload_call('Carbon\\Traits\\D...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/ in /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 510
+[05-Jan-2022 20:34:45 Africa/Nairobi] PHP Notice:  require(): read of 10403 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php on line 72
+[05-Jan-2022 20:34:45 Africa/Nairobi] PHP Fatal error:  require(): Failed opening required '/home/mixqxmsv/public_html/local/config/dompdf.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php on line 72
+[05-Jan-2022 17:36:26 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 10532 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Carbon\\Traits\\D...')
+#4 /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php(510): spl_autoload_call('Carbon\\Traits\\D...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile(' in /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 510
+[05-Jan-2022 17:40:28 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 6584 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Carbon\\Traits\\T...')
+#4 /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Traits/Date.php(528): spl_autoload_call('Carbon\\Traits\\T...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoloa in /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Traits/Date.php on line 528
+[05-Jan-2022 17:56:58 UTC] PHP Fatal error:  Uncaught ErrorException: include(): read of 781 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Exceptions\\...')
+#4 [internal function]: spl_autoload_call('App\\Exceptions\\...')
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Exceptions\\...')
+#6 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Conta in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[06-Jan-2022 09:34:30 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 26916 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Carbon\\Traits\\D...')
+#4 /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php(510): spl_autoload_call('Carbon\\Traits\\D...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile(' in /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 510
+[08-Jan-2022 13:01:02 Africa/Nairobi] PHP Notice:  include(): read of 3620 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[08-Jan-2022 13:01:02 Africa/Nairobi] PHP Warning:  include(): Failed opening '/home/mixqxmsv/public_html/local/vendor/composer/../symfony/finder/Glob.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[08-Jan-2022 13:01:03 Africa/Nairobi] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:258
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic('replaceNamespac...', Array)
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(586): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(567): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(478): Illuminate\Foundation\Exceptions\Handler->renderHttpException(Object(Symfony\Component\HttpKernel\Exception\HttpException))
+#4 /home/mixqxmsv/public_html/l in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 258
+[10-Jan-2022 10:54:40 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 4989 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Carbon\\Traits\\T...')
+#4 /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Traits/Date.php(528): spl_autoload_call('Carbon\\Traits\\T...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoloa in /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Traits/Date.php on line 528
+[12-Jan-2022 08:28:03 Africa/Nairobi] PHP Notice:  require_once(): read of 596740 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/autoload_real.php on line 31
+[13-Jan-2022 01:43:22 Africa/Nairobi] PHP Notice:  require_once(): read of 97028 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/autoload_real.php on line 31
+[17-Jan-2022 14:09:32 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('view')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('view')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('view', Array)
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/ in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[17-Jan-2022 14:09:32 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('view')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('view')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('view', Array)
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/ in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[07-Feb-2022 06:46:01 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 59684 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Carbon\\Traits\\D...')
+#4 /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php(510): spl_autoload_call('Carbon\\Traits\\D...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\in in /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 510
+[07-Feb-2022 07:15:19 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 26916 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Carbon\\Traits\\D...')
+#4 /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php(510): spl_autoload_call('Carbon\\Traits\\D...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\in in /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 510
+[07-Feb-2022 10:32:16 Africa/Nairobi] PHP Notice:  include(): read of 346 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[07-Feb-2022 10:32:16 Africa/Nairobi] PHP Warning:  include(): Failed opening '/home/mixqxmsv/public_html/local/vendor/composer/../vlucas/phpdotenv/src/Repository/Adapter/AdapterInterface.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[07-Feb-2022 10:32:17 Africa/Nairobi] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('config')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('config')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/mixqxmsv/public_html/local/vendor/larave in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[07-Feb-2022 08:45:23 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 4859 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Illuminate\\Test...')
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Testing/ParallelTestingServiceProvider.php(9): spl_autoload_call('Illuminate\\Test...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLo in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Testing/ParallelTestingServiceProvider.php on line 9
+[07-Feb-2022 08:55:06 UTC] PHP Fatal error:  Uncaught ErrorException: include(): read of 781 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Exceptions\\...')
+#4 [internal function]: spl_autoload_call('App\\Exceptions\\...')
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Exceptions\\...')
+#6 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Conta in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[07-Feb-2022 09:07:29 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 96548 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Carbon\\Traits\\D...')
+#4 /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php(510): spl_autoload_call('Carbon\\Traits\\D...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\in in /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 510
+[07-Feb-2022 09:07:29 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 67876 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Carbon\\Traits\\D...')
+#4 /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php(510): spl_autoload_call('Carbon\\Traits\\D...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\in in /home/mixqxmsv/public_html/local/vendor/nesbot/carbon/src/Carbon/Carbon.php on line 510
+[07-Feb-2022 12:30:11 Africa/Nairobi] PHP Notice:  require_once(): read of 314116 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/autoload_real.php on line 31
+[07-Feb-2022 09:30:30 UTC] PHP Fatal error:  Uncaught ErrorException: include(): read of 781 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Exceptions\\...')
+#4 [internal function]: spl_autoload_call('App\\Exceptions\\...')
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Exceptions\\...')
+#6 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Conta in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[07-Feb-2022 09:30:30 UTC] PHP Fatal error:  Uncaught ErrorException: include(): read of 781 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Exceptions\\...')
+#4 [internal function]: spl_autoload_call('App\\Exceptions\\...')
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Exceptions\\...')
+#6 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Conta in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[07-Feb-2022 09:30:30 UTC] PHP Fatal error:  Uncaught ErrorException: include(): read of 781 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Exceptions\\...')
+#4 [internal function]: spl_autoload_call('App\\Exceptions\\...')
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Exceptions\\...')
+#6 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Conta in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[10-Feb-2022 03:29:08 UTC] PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('translator')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('translator')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('translator', Array)
+#5 /home/mixqxmsv/public_ in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[10-Feb-2022 03:29:08 UTC] PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('translator')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('translator')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('translator', Array)
+#5 /home/mixqxmsv/public_ in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[13-Feb-2022 07:51:03 UTC] PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('translator')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('translator')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('translator', Array)
+#5 /home/mixqxmsv/public_ in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[19-Feb-2022 16:42:14 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 1260 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Illuminate\\View...')
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/View/Factory.php(15): spl_autoload_call('Illuminate\\View...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\A in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/View/Factory.php on line 15
+[22-Feb-2022 16:24:42 Africa/Nairobi] PHP Notice:  require_once(): read of 289540 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/autoload_real.php on line 31
+[22-Feb-2022 21:27:13 UTC] PHP Fatal error:  Uncaught ErrorException: include(): read of 19737 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#4 /home/mixqxmsv/public_html/local/app/Exceptions/Handler.php(8): spl_autoload_call('Illuminate\\Foun...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#7 [inte in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[22-Feb-2022 21:27:15 UTC] PHP Fatal error:  Uncaught ReflectionException: Class translator does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('translator')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('translator')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('translator', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('translator', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('translator', Array)
+#5 /home/mixqxmsv/public_ in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[25-Feb-2022 20:30:35 Africa/Nairobi] PHP Notice:  include(): read of 2394 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[25-Feb-2022 20:30:35 Africa/Nairobi] PHP Notice:  include(): read of 2394 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[25-Feb-2022 20:30:35 Africa/Nairobi] PHP Warning:  include(): Failed opening '/home/mixqxmsv/public_html/local/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[25-Feb-2022 20:30:35 Africa/Nairobi] PHP Warning:  include(): Failed opening '/home/mixqxmsv/public_html/local/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[25-Feb-2022 20:30:35 Africa/Nairobi] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Co in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[25-Feb-2022 20:30:35 Africa/Nairobi] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Co in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[25-Feb-2022 20:30:39 Africa/Nairobi] PHP Notice:  include(): read of 1487 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[25-Feb-2022 20:30:39 Africa/Nairobi] PHP Warning:  include(): Failed opening '/home/mixqxmsv/public_html/local/vendor/composer/../symfony/finder/Iterator/PathFilterIterator.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[25-Feb-2022 20:30:40 Africa/Nairobi] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:258
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic('replaceNamespac...', Array)
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(586): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(567): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(478): Illuminate\Foundation\Exceptions\Handler->renderHttpException(Object(Symfony\Component\HttpKernel\Exception\HttpException))
+#4 /home/mixqxmsv/public_html/l in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 258
+[25-Feb-2022 20:30:46 Africa/Nairobi] PHP Notice:  include(): read of 67182 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/voku/portable-ascii/src/voku/helper/ASCII.php on line 1372
+[25-Feb-2022 20:30:46 Africa/Nairobi] PHP Warning:  include(): Failed opening '/home/mixqxmsv/public_html/local/vendor/voku/portable-ascii/src/voku/helper/data/ascii_by_languages.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mixqxmsv/public_html/local/vendor/voku/portable-ascii/src/voku/helper/ASCII.php on line 1372
+[25-Feb-2022 20:30:46 Africa/Nairobi] PHP Warning:  Invalid argument supplied for foreach() in /home/mixqxmsv/public_html/local/vendor/voku/portable-ascii/src/voku/helper/ASCII.php on line 461
+[25-Feb-2022 20:30:46 Africa/Nairobi] PHP Notice:  include(): read of 67182 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/voku/portable-ascii/src/voku/helper/ASCII.php on line 1372
+[25-Feb-2022 20:30:46 Africa/Nairobi] PHP Notice:  Undefined index: - in /home/mixqxmsv/public_html/local/vendor/voku/portable-ascii/src/voku/helper/ASCII.php on line 466
+[25-Feb-2022 20:30:46 Africa/Nairobi] PHP Warning:  Only arrays and Traversables can be unpacked in /home/mixqxmsv/public_html/local/vendor/voku/portable-ascii/src/voku/helper/ASCII.php on line 466
+[25-Feb-2022 20:30:46 Africa/Nairobi] PHP Warning:  include(): Failed opening '/home/mixqxmsv/public_html/local/vendor/voku/portable-ascii/src/voku/helper/data/ascii_by_languages.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mixqxmsv/public_html/local/vendor/voku/portable-ascii/src/voku/helper/ASCII.php on line 1372
+[25-Feb-2022 20:30:46 Africa/Nairobi] PHP Warning:  Invalid argument supplied for foreach() in /home/mixqxmsv/public_html/local/vendor/voku/portable-ascii/src/voku/helper/ASCII.php on line 461
+[25-Feb-2022 20:30:46 Africa/Nairobi] PHP Notice:  Undefined index: - in /home/mixqxmsv/public_html/local/vendor/voku/portable-ascii/src/voku/helper/ASCII.php on line 466
+[25-Feb-2022 20:30:46 Africa/Nairobi] PHP Warning:  Only arrays and Traversables can be unpacked in /home/mixqxmsv/public_html/local/vendor/voku/portable-ascii/src/voku/helper/ASCII.php on line 466
+[25-Feb-2022 17:30:50 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 4000 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Illuminate\\View...')
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/View/Factory.php(15): spl_autoload_call('Illuminate\\View...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\A in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/View/Factory.php on line 15
+[25-Feb-2022 17:30:50 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 4000 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Illuminate\\View...')
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/View/Factory.php(15): spl_autoload_call('Illuminate\\View...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\A in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/View/Factory.php on line 15
+[25-Feb-2022 20:30:50 Africa/Nairobi] PHP Notice:  require_once(): read of 617220 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/autoload_real.php on line 31
+[28-Feb-2022 17:27:11 Africa/Nairobi] PHP Notice:  require_once(): read of 84740 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/autoload_real.php on line 31
+[03-Mar-2022 10:58:53 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('view')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('view')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('view', Array)
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/ in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[09-Mar-2022 00:14:02 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('view')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('view')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('view', Array)
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/ in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[09-Mar-2022 16:12:09 Africa/Nairobi] PHP Notice:  include(): read of 15302 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[10-Mar-2022 01:35:53 UTC] PHP Fatal error:  Uncaught ErrorException: include(): read of 781 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Exceptions\\...')
+#4 [internal function]: spl_autoload_call('App\\Exceptions\\...')
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Exceptions\\...')
+#6 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Conta in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[14-Mar-2022 04:45:11 Africa/Nairobi] PHP Notice:  include(): read of 2192 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[14-Mar-2022 04:45:11 Africa/Nairobi] PHP Warning:  include(): Failed opening '/home/mixqxmsv/public_html/local/vendor/composer/../graham-campbell/result-type/src/Success.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[14-Mar-2022 04:45:12 Africa/Nairobi] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('config')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('config')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/mixqxmsv/public_html/local/vendor/larave in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[16-Mar-2022 17:22:27 UTC] PHP Fatal error:  Uncaught ErrorException: include(): read of 781 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Exceptions\\...')
+#4 [internal function]: spl_autoload_call('App\\Exceptions\\...')
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Exceptions\\...')
+#6 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Conta in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[16-Mar-2022 17:22:27 UTC] PHP Fatal error:  Uncaught ErrorException: include(): read of 781 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Exceptions\\...')
+#4 [internal function]: spl_autoload_call('App\\Exceptions\\...')
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Exceptions\\...')
+#6 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Conta in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[17-Mar-2022 07:40:25 UTC] PHP Fatal error:  Uncaught ErrorException: include(): read of 781 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Exceptions\\...')
+#4 [internal function]: spl_autoload_call('App\\Exceptions\\...')
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Exceptions\\...')
+#6 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Conta in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[17-Mar-2022 07:40:26 UTC] PHP Fatal error:  Uncaught ErrorException: include(): read of 781 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Exceptions\\...')
+#4 [internal function]: spl_autoload_call('App\\Exceptions\\...')
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Exceptions\\...')
+#6 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Conta in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[21-Mar-2022 17:22:35 UTC] PHP Fatal error:  Uncaught ErrorException: include(): read of 781 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Exceptions\\...')
+#4 [internal function]: spl_autoload_call('App\\Exceptions\\...')
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Exceptions\\...')
+#6 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Conta in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[22-Mar-2022 12:29:05 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 5365 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Illuminate\\Data...')
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(27): spl_autoload_call('Illuminate\\Data...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322 in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php on line 27
+[26-Mar-2022 17:41:03 Africa/Nairobi] PHP Notice:  include(): read of 19398 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[19-Apr-2022 11:58:35 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('view')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('view')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('view', Array)
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/ in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[20-Apr-2022 08:56:06 UTC] PHP Fatal error:  Uncaught ErrorException: include(): read of 781 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Exceptions\\...')
+#4 [internal function]: spl_autoload_call('App\\Exceptions\\...')
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('App\\Exceptions\\...')
+#6 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Conta in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[27-Apr-2022 16:34:04 Africa/Nairobi] PHP Notice:  include(): read of 1162 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[27-Apr-2022 16:34:04 Africa/Nairobi] PHP Warning:  include(): Failed opening '/home/mixqxmsv/public_html/local/vendor/composer/../laravel/framework/src/Illuminate/Contracts/Config/Repository.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php on line 444
+[27-Apr-2022 16:34:04 Africa/Nairobi] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('config')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('config')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('config', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('config', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('config', Array)
+#5 /home/mixqxmsv/public_html/local/vendor/larave in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[02-May-2022 16:05:27 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 990 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Illuminate\\Foun...')
+#4 /home/mixqxmsv/public_html/local/app/Http/Controllers/Controller.php(10): spl_autoload_call('Illuminate\\Foun...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/ in /home/mixqxmsv/public_html/local/app/Http/Controllers/Controller.php on line 10
+[05-May-2022 04:35:20 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 3325 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Illuminate\\Queu...')
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Auth/Events/Authenticated.php(7): spl_autoload_call('Illuminate\\Queu...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322) in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Auth/Events/Authenticated.php on line 7
+[05-May-2022 04:36:25 UTC] PHP Fatal error:  During class fetch: Uncaught ErrorException: include(): read of 3325 bytes failed with errno=12 Cannot allocate memory in /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php:444
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'include(): read...', '/home/mixqxmsv/...', 444, Array)
+#1 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include()
+#2 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home/mixqxmsv/...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Illuminate\\Queu...')
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Auth/Events/Authenticated.php(7): spl_autoload_call('Illuminate\\Queu...')
+#5 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(444): include('/home/mixqxmsv/...')
+#6 /home/mixqxmsv/public_html/local/vendor/composer/ClassLoader.php(322) in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Auth/Events/Authenticated.php on line 7
+[19-May-2022 03:52:45 Africa/Nairobi] PHP Notice:  require_once(): read of 240388 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/autoload_real.php on line 31
+[19-May-2022 14:01:09 Africa/Nairobi] PHP Notice:  require_once(): read of 289540 bytes failed with errno=14 Bad address in /home/mixqxmsv/public_html/local/vendor/composer/autoload_real.php on line 31
+[29-May-2022 14:03:02 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('view')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('view')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('view', Array)
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/ in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[31-May-2022 11:25:03 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('view')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('view')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('view', Array)
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/ in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875
+[07-Jun-2022 12:44:01 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php:873
+Stack trace:
+#0 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): ReflectionClass->__construct('view')
+#1 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('view')
+#2 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('view', Array)
+#5 /home/mixqxmsv/public_html/local/vendor/laravel/framework/ in /home/mixqxmsv/public_html/local/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 875

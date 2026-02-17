@@ -1,0 +1,332 @@
+<style>
+    .pb-5, .py-5 {
+        padding-bottom: 3rem!important;
+    }
+
+    .container {
+        max-width: 1240px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .text-center {
+        text-align: center!important;
+    }
+
+    .pt-5, .py-5 {
+        padding-top: 3rem!important;
+    }
+
+    .col-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+
+    .mb-3, .my-3 {
+        margin-bottom: 1rem!important;
+    }
+
+    .mt-5, .my-5 {
+        margin-top: 3rem!important;
+    }
+
+    .col-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+
+    .col-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        height: calc(1.5em+ 0.75rem+ 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0 !important;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    }
+
+    .parent_div{
+        height: 39em;
+        background-color: #FFFFEE;
+        padding-left: 0 !important;
+        position: relative;
+    }
+
+    .parent_div .row{
+
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    @font-face {
+        font-family: 'CustomFont';
+        src: url({{ storage_path('fonts\ShadowsIntoLightTwo-Regular.ttf') }});
+    }
+
+     @font-face {
+            font-family: 'LobsterTwo-Regular';
+            src: url({{ storage_path('fonts\Lobster_Two\LobsterTwo-Regular.ttf') }});
+     }
+
+    @font-face {
+            font-family: 'LobsterTwo-Bold';
+            src: url({{ storage_path('fonts\Lobster_Two\LobsterTwo-Bold.ttf') }});
+     }
+
+    @font-face {
+                font-family: 'SourceSansPro-Black';
+                src: url({{ storage_path('fonts\SourceSansPro-Black.ttf') }});
+     }
+
+
+    *{
+        font-family: "SourceSansPro-Black" !important;
+    }
+
+    h2{
+        font-family: 'SourceSansPro-Black' !important;
+    }
+
+    .heading2{
+        font-weight: 400;
+        font-size: 20px;
+        color: #60471C;
+    }
+
+    .heading5{
+        font-weight: 400;
+        font-size: 30px;
+        color: #60471C;
+    }
+
+    .heading6{
+        font-weight: 400;
+        font-size: 15px;
+        color: #60471C;
+    }
+
+    .text_box_holder_right {
+        overflow: auto;
+        width: 85%;
+        position: absolute;
+        right: 0px; !important;
+    }
+
+    .text_box_holder_left {
+            overflow: auto;
+            width: 85%;
+            position: absolute;
+            left: 0px; !important;
+        }
+
+    .text_box_holder .right_side_textbox {
+
+    }
+
+    table{
+
+        overflow: hidden;
+    }
+
+    #triangle-topleft {
+        position: absolute;
+        /*width: 0;
+        height: 0;*/
+        /*border: 1px solid red;*/
+        width: 200px;
+        height: 180px;
+        padding-left: 0 !important;
+        padding-top: 0 !important;
+        /*border-top: 100px solid #FCCC0B;
+        border-right: 100px solid transparent;*/
+    }
+
+    #triangle-topleft img{
+        position: absolute;
+        left: -30px !important;
+        top: -27px !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        height: 100%;
+        width: 100%;
+        /*height: 120px;
+        width: 120px;*/
+    }
+
+    #triangle-topright {
+        position: absolute;
+        width: 200px;
+        height: 180px;
+        padding-left: 0 !important;
+        padding-top: 0 !important;
+        right: 0;
+        top:0;
+
+    }
+
+    #triangle-topright img{
+        position: absolute;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        height: 100%;
+        width: 100%;
+        right: -35px !important;
+        top: -32px !important;
+    }
+
+    #triangle-bottomleft {
+        position: absolute;
+        width: 200px;
+        height: 180px;
+        padding-left: 0 !important;
+        padding-top: 0 !important;
+        bottom: 0;
+        left: 0;
+    }
+
+    #triangle-bottomleft img{
+        position: absolute;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        height: 100%;
+        width: 100%;
+        left: -32px !important;
+        bottom: -28px !important;
+    }
+
+
+    #triangle-bottomright {
+        position: absolute;
+        width: 250px;
+        height: 220px;
+        padding-left: 0 !important;
+        padding-top: 0 !important;
+        bottom: 0;
+        right: 0;
+    }
+
+    #triangle-bottomright img{
+        position: absolute;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        height: 100%;
+        width: 100%;
+        right: -33px !important;
+        bottom: -30px !important;
+    }
+
+</style>
+
+<div class="container parent_div">
+    <div id="triangle-topleft">
+        <img src="{{ base_path() }}/storage/images/top-left.png" class="img-fluid" alt="SIYB" title="Logo" style="width: 100%" />
+    </div>
+    <div id="triangle-topright">
+        <img src="{{ base_path() }}/storage/images/top-right.png" class="img-fluid" alt="SIYB" title="Logo" style="width: 100%" />
+    </div>
+    <div class="row">
+        <div class="col-12 text-center">
+            <p class="text-center heading2">CERTIFICATE OF PARTICIPATION</p>
+            <p class="heading6">Awarded to</p>
+            <p class="heading2">{{$trainee}}</p>
+            <p class="heading6">of</p>
+            <h2 class="heading2">{{$company}}</h2>
+
+
+            <div style="text-align: center; margin-bottom: 3em !important;" class="mb-5">
+                <div style="max-width: 60%; text-align: center;  margin: 0 auto;">
+                    <p class="mb-3 mt-3">
+                       {{$description}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <table style="width: 100%">
+            <tr>
+                <td style="width: 15%; position: relative" >
+                    <img src="{{ base_path() }}/storage/images/siyb_png.png" class="mt-4 mr-3" alt="SIYB" title="Logo" style="margin-top: 1em; margin-right: 1em; width:85px; position: absolute; right: 0" />
+                </td>
+                <td style="width: 35%; text-align: center; position: relative;">
+                    <div class="text_box_holder_left">
+                        <input type="text" class="form-control right_side_textbox"
+                               style="background-color: #FFFFEE !important;
+                       border-bottom: 4px solid #60471C;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0;
+                        ">
+                    </div>
+                    <div>
+                        <p>{{$co_trainer}}</p>
+                        <p>Co-Trainer</p>
+                    </div>
+
+                </td>
+                <td style="width: 35%; text-align: center; position: relative;" >
+                    <div class="text_box_holder_right">
+                        <input type="text" class="form-control right_side_textbox"
+                               style="background-color: #FFFFEE !important;
+                       border-bottom: 4px solid #60471C;
+                       border-top: 0;
+                       border-left: 0;
+                       border-right: 0;
+                        ">
+                    </div>
+
+                    <div>
+                        <p>{{$lead_trainer}}</p>
+                        <p>Lead Trainer</p>
+                    </div>
+
+                </td>
+                <td style="width: 15%; position: relative">
+                    <img src="{{ base_path() }}/storage/images/logo.png" class="mt-4 ml-3" alt="Logo" title="Logo" style="width:85px; margin-top: 1em; margin-right: 1em; " />
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="row mt-5" style="position: relative; bottom: 0px;">
+        <div class="col-12 text-center">
+            <p>NITA registration Number</p>
+            <p>NITA/TRN/1814</p>
+        </div>
+    </div>
+    <div id="triangle-bottomleft">
+        <img src="{{ base_path() }}/storage/images/bottom-left.png" class="img-fluid" alt="SIYB" title="Logo" style="width: 100%" />
+    </div>
+    <div id="triangle-bottomright">
+        <img src="{{ base_path() }}/storage/images/bottom-right.png" class="img-fluid" alt="SIYB" title="Logo" style="width: 100%" />
+    </div>
+</div>

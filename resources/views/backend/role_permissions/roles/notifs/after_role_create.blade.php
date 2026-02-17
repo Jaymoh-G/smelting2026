@@ -1,0 +1,23 @@
+@if (Session::has('success'))
+    <div class="alert alert-micro alert-border-left alert-success pastel alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <i class="fa fa-info pr10"></i>
+        {{ Session::get('success') }}
+        <p>Click <a href="{{route('users_index')}}" class="partial_data_link bg-blue"> HERE </a> &nbsp to add users to the role</p>
+    </div>
+@endif
+@if (Session::has('failure'))
+    <div class="alert alert-micro alert-border-left alert-danger pastel alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <i class="fa fa-info pr10"></i>
+        {{ Session::get('failure') }}
+    </div>
+@endif
+
+@if (Session::has('warning'))
+    <div class="alert alert-micro alert-border-left alert-warning pastel alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <i class="fa fa-info pr10"></i>
+        {{ Session::get('warning') }}
+    </div>
+@endif

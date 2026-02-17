@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('../../fonts/montserrat/Montserrat-Light.otf');
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('../../fonts/source-sans-pro/SourceSansPro-Regular.otf');
+}
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url('../../fonts/Caviar-Dreams/CaviarDreams.ttf');
+}
+
+* {
+    font-family: "OpenSans";
+    font-size: 400;
+}
+
+.pagination {
+    margin-top: 0px !important;
+    float: right;
+}
+
+.dataTables_empty {
+    text-align: center;
+}
+
+.ajax_spinner {
+    display: none;
+ }
+/*
+#main_grid{
+    !*border: 1px solid red;*!
+    width: 100%;
+}
+
+.dataTables_scroll{
+    width: 100% !important;
+}
+
+.dataTables_scrollHeadInner {
+    !*border: 1px solid blue;*!
+    width: 100% !important;
+}
+
+.dataTables_scrollHeadInner .table{
+    !*border: 1px solid green;*!
+    width: 100% !important;
+}
+
+.dataTables_scrollBody {
+    !*border: 1px solid blue;*!
+    width: 100% !important;
+}
+
+.dataTables_scrollBody .table{
+    !*border: 1px solid green;*!
+    width: 100% !important;
+}
+
+th{
+    border: 1px solid green !important;
+}*/
+
+.tiny_mce_submits, .add_sub_service{
+    width: 150px;
+}
+
+.sub_service_wrapper{
+    text-align: center;
+}
+
+.sub_service_txt_area{
+
+}
+
+.remove_subservice {
+
+
+}

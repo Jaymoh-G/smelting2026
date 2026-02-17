@@ -1,0 +1,12 @@
+.dropzoneholder {
+    max-height: 200px !important;
+    /*border: 1px solid red;*/
+    overflow-y: hidden;
+}
+
+.dropzoneholder .dropzone{
+    position: relative;
+    top: -2.5em;
+}
+
+.data
