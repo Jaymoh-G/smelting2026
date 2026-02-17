@@ -1,0 +1,46 @@
+name: 🚀 Deploy website on push
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: 📂 Sync files to /asn
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: 102.130.114.179
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          server-dir: /public_html/local/
+          exclude: |
+            # Exclude git metadata completely (prevents uploading large pack files)
+            .git/**
+            **/.git/**
+            .git*
+            **/.github/**
+            **/.vscode/**
+            **/tests/**
+            **/node_modules/**
+            README*.md
+            .env
+            # Choose ONE of the following, depending on your server setup:
+            # If server runs Composer on deploy:
+            vendor/**
+            storage/**
+            # If server cannot run Composer (include vendor, but exclude dev cache/logs instead):
+            # storage/logs/**
+            # storage/framework/cache/**
+            # storage/framework/sessions/**
+            # storage/framework/views/**
