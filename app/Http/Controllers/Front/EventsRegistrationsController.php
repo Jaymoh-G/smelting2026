@@ -10,8 +10,8 @@ use Illuminate\Http\Request;
 use App\Models\Event;
 use App\Models\EventExtraFormField;
 use App\Models\EventRegistration;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
-use Log;
 
 class EventsRegistrationsController extends Controller
 {
@@ -136,70 +136,95 @@ class EventsRegistrationsController extends Controller
     public function takePayment(Request $request){
         $ajax_data = $request->all();
 
-        // Sanitize Phone Number
-        $phone_number_sanitized = $this->sanitizePhoneNumber($ajax_data['phone_number']);
-        $full_phone_number      = "254".$phone_number_sanitized;
+        $response = function ($code, $message) {
+            return response()->json(['Code' => $code, 'Description' => $message]);
+        };
 
-        $event                  = Event::find($ajax_data['resource']);
-        $donation_amount        = $event->cost;
-        $donation_amount = intval($donation_amount);
-
-        // Invoke the MPESA API to Get the access token
-        $consumer_key     = env('LIVE_CONSUMER_KEY');
-        $consumer_secret  = env('LIVE_CONSUMER_SECRET');
-
-        $credentials      = base64_encode( $consumer_key.":".$consumer_secret);
-        // $url              = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
-        $url              = env('LIVE_CREDENTIALS_URL');
-        $curl             = curl_init();
-        curl_setopt($curl, CURLOPT_URL, $url);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: Basic ".$credentials));
-        curl_setopt($curl, CURLOPT_HEADER,false);
-        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        $curl_response = curl_exec($curl);
-        $access_token  = json_decode($curl_response); // This is an object
-        $ajax_response = NULL;
-
-        if(!is_null($access_token)){
-            $token = $access_token->access_token;
-            $ttl   = $access_token->expires_in;
-
-            $short_code = env('LIVE_SHORTCODE');
-            $password = $this->getLipaNaMpesaPassword($short_code);
-
-            $response_from_push_json = $this->invokeSTKPush($token, $password, $short_code, $full_phone_number, $donation_amount);
-            $response_from_push = json_decode($response_from_push_json, true);
-            
-            if(!is_null($response_from_push)){
-                $new_payment = EventPayment::create([
-                    'registrant_id'  => $ajax_data['registrant_id'],
-                    'event_id'       => $event->id,
-                    'amount'         => $donation_amount,
-                    'paying_phone'   => $full_phone_number,
-
-                    // 'donor_email'   => ,
-                    'MerchantRequestID'   => $response_from_push['MerchantRequestID'],
-                    'CheckoutRequestID'   => $response_from_push['CheckoutRequestID'],
-                    'ResponseCode'        => $response_from_push['ResponseCode'],
-                    'CustomerMessage'     => $response_from_push['CustomerMessage']
-                ]);
-                $registrant = EventRegistration::find($ajax_data['registrant_id']);
-				$resource = Event::find($event->id);
-                $response = [
-                    "Code" => "200",
-                    "Description" => "Registration Successful",
-                ];
-                return json_encode($response);
-            }else{
-                $response = [
-                    "Code" => "500",
-                    "Description" => "Registration Failed",
-                ];
-                return json_encode($response);
-            }
-
+        // Validate required fields
+        if (empty($ajax_data['phone_number']) || empty($ajax_data['resource']) || empty($ajax_data['registrant_id'])) {
+            Log::warning('takePayment: Missing required fields', $ajax_data);
+            return $response(500, 'Missing required payment details. Please try again.');
         }
+
+        // Sanitize Phone Number - M-Pesa format: 254XXXXXXXXX (12 digits)
+        $phone_number_sanitized = $this->sanitizePhoneNumber($ajax_data['phone_number']);
+        $full_phone_number      = '254' . $phone_number_sanitized;
+
+        if (strlen($full_phone_number) != 12) {
+            Log::warning('takePayment: Invalid phone format', ['input' => $ajax_data['phone_number'], 'sanitized' => $full_phone_number]);
+            return $response(500, 'Please enter a valid 9-digit phone number (e.g. 712345678).');
+        }
+
+        $event = Event::find($ajax_data['resource']);
+        if (!$event) {
+            return $response(500, 'Event not found.');
+        }
+
+        $donation_amount = intval($event->cost);
+        if ($donation_amount <= 0) {
+            return $response(500, 'Invalid event cost.');
+        }
+
+        // Get OAuth access token
+        $consumer_key  = env('LIVE_CONSUMER_KEY');
+        $consumer_secret = env('LIVE_CONSUMER_SECRET');
+        $credentials_url = env('LIVE_CREDENTIALS_URL');
+
+        if (empty($consumer_key) || empty($consumer_secret) || empty($credentials_url)) {
+            Log::error('takePayment: M-Pesa credentials not configured (LIVE_CONSUMER_KEY, LIVE_CONSUMER_SECRET, LIVE_CREDENTIALS_URL)');
+            return $response(500, 'Payment service is not configured. Please contact support.');
+        }
+
+        $credentials = base64_encode($consumer_key . ':' . $consumer_secret);
+        $curl = curl_init();
+        curl_setopt_array($curl, [
+            CURLOPT_URL => $credentials_url,
+            CURLOPT_HTTPHEADER => ['Authorization: Basic ' . $credentials],
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_SSL_VERIFYPEER => false,
+        ]);
+        $curl_response = curl_exec($curl);
+        $auth_result = json_decode($curl_response);
+        curl_close($curl);
+
+        if (empty($auth_result->access_token)) {
+            Log::error('takePayment: OAuth failed', ['response' => $curl_response]);
+            return $response(500, 'Unable to connect to payment service. Please try again later.');
+        }
+
+        $token = $auth_result->access_token;
+        $short_code = env('LIVE_SHORTCODE');
+        $password = $this->getLipaNaMpesaPassword($short_code);
+
+        $response_from_push_json = $this->invokeSTKPush($token, $password, $short_code, $full_phone_number, $donation_amount);
+        $response_from_push = json_decode($response_from_push_json, true);
+
+        // Check for M-Pesa API errors
+        if (isset($response_from_push['errorCode']) || isset($response_from_push['errorMessage'])) {
+            $error_msg = $response_from_push['errorMessage'] ?? $response_from_push['errorCode'] ?? 'Unknown error';
+            Log::error('takePayment: STK Push API error', ['response' => $response_from_push]);
+            return $response(500, 'Payment request failed: ' . $error_msg);
+        }
+
+        // Check for successful STK push (MerchantRequestID = request accepted for processing)
+        if (empty($response_from_push['MerchantRequestID']) || empty($response_from_push['CheckoutRequestID'])) {
+            Log::error('takePayment: Invalid STK Push response', ['response' => $response_from_push]);
+            return $response(500, 'Payment request failed. Please try again.');
+        }
+
+        $customer_message = $response_from_push['CustomerMessage'] ?? 'Success. Please check your phone to complete the payment.';
+
+        EventPayment::create([
+            'registrant_id'     => $ajax_data['registrant_id'],
+            'event_id'          => $event->id,
+            'amount'            => $donation_amount,
+            'MerchantRequestID' => $response_from_push['MerchantRequestID'],
+            'CheckoutRequestID' => $response_from_push['CheckoutRequestID'],
+            'ResponseCode'      => $response_from_push['ResponseCode'] ?? '0',
+            'CustomerMessage'   => $customer_message,
+        ]);
+
+        return $response(200, 'A notification has been sent to ' . $full_phone_number . '. Please check your phone and enter your M-Pesa PIN to complete the payment.');
     }
 
     /**
@@ -217,19 +242,19 @@ class EventsRegistrationsController extends Controller
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer '.$token));
 
+        $party_b = env('TILL_NUMBER') ?: env('LIVE_SHORTCODE');
         $curl_post_data = [
-            //Fill in the request parameters with valid values
             'BusinessShortCode' => env('LIVE_SHORTCODE'),
             'Password'          => $password,
             'Timestamp'         => $this->getNowTimestamp(),
             'TransactionType'   => 'CustomerBuyGoodsOnline',
             'Amount'            => $donation_amount,
-            'PartyA'            => $full_phone_number, // Max 12 digits in this format
-            'PartyB'            => env('TILL_NUMBER'),
-            'PhoneNumber'       => $full_phone_number, // Max 12 digits in this format
+            'PartyA'            => $full_phone_number,
+            'PartyB'            => $party_b,
+            'PhoneNumber'       => $full_phone_number,
             'CallBackURL'       => env('LIVE_MPESA_API_STK_CALLBACK'),
-            'AccountReference'  => "SmeltingAfrikaConsultants",
-            'TransactionDesc'   => "Event Payment"
+            'AccountReference'  => 'SmeltingAfrikaConsultants',
+            'TransactionDesc'   => 'Event Payment',
         ];
 
         $data_string = json_encode($curl_post_data);
@@ -259,10 +284,6 @@ class EventsRegistrationsController extends Controller
     }
 
     protected function getNowTimestamp(){
-        $now_ts              = Carbon::now()->timestamp;
-        $nairobi_ts          = Carbon::parse($now_ts)->addHours(3);
-        $date_time           = Carbon::parse($nairobi_ts)->format('YmdHis');
-
-        return $date_time;
+        return Carbon::now('Africa/Nairobi')->format('YmdHis');
     }
 }

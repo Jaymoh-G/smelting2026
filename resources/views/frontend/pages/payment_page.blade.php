@@ -77,9 +77,9 @@ use Illuminate\Support\Facades\Request;
             $(document).on('click','#new_donation_yes', function(){
                 $('.ajax_status i').css({'display':'inline'});
 
-                if($(".modal-body #phone_number").val() == ""){
+                if($('#phone_number').val() == "" || $('#phone_number').val().length < 9){
 
-                    $('.ajax_status span').text("Phone Number cannot be empty").addClass('text-danger');
+                    $('.ajax_status span').text("Please enter a valid 9-digit phone number (e.g. 712345678)").addClass('text-danger');
                     $('.ajax_status i').css({'display':'none'});
                     return;
                 }
@@ -100,48 +100,47 @@ use Illuminate\Support\Facades\Request;
                 $.ajax({
                     url: '{!! route("takePayment") !!}',
                     type: 'POST',
+                    dataType: 'json',
                     headers: {
                         'X-CSRF-TOKEN': " {{csrf_token()}}"
                     },
                     data: {
-                        phone_number_pt1:phone_number_pt1,
-                        phone_number:phone_number,
-                        resource:resource,
-                        registrant_id:registrant_id
+                        phone_number_pt1: phone_number_pt1,
+                        phone_number: phone_number,
+                        resource: resource,
+                        registrant_id: registrant_id
                     }
                 })
                     .done(function (response) {
-                        console.log("RESPONSE");
-                        console.log(response.Code);
                         $('.ajax_status i').css({'display':'none'});
-                        response = JSON.parse(response);
-                        if(response.Code == 200){
+                        document.getElementById("new_donation_yes").disabled = false;
 
+                        if (typeof response === 'string') {
+                            try { response = JSON.parse(response); } catch (e) { response = {}; }
+                        }
+                        if (response && response.Code == 200) {
                             $('#new_donation_yes').css({"display" : "none"});
                             $('#stk_success').css({'display':'block'});
-                            $('#stk_success span').text("A notification has been sent to the provided phone number, if you authorize it you will receive a receipt on the registered email address");
-
-                            // Wait for a few seconds after showing message to close the modal.
-                            // Anonymous function as timeout
-                            /*setTimeout(function(){
-                                $('#new_donation').modal('hide');
-                            }, 10000);*/
-                        }else {
-                            // Show error message
+                            $('#stk_success span').text(response.Description || "A notification has been sent to your phone. Please enter your M-Pesa PIN to complete the payment.");
+                        } else {
                             $('#stk_fail').css({'display':'block'});
-                            $('#stk_fail span').text(response.Description);
-
-                            // Hide button
-                            $('#new_donation_yes').css({"display" : "none"});
-
+                            $('#stk_fail span').text(response && response.Description ? response.Description : "Payment request failed. Please try again.");
                         }
-
-
-                    })//end done
-
+                    })
                     .fail(function (xhr) {
-
-                    }); //end fail
+                        $('.ajax_status i').css({'display':'none'});
+                        document.getElementById("new_donation_yes").disabled = false;
+                        $('#stk_fail').css({'display':'block'});
+                        var errMsg = "Payment request failed. ";
+                        if (xhr.responseJSON && xhr.responseJSON.Description) {
+                            errMsg = xhr.responseJSON.Description;
+                        } else if (xhr.responseJSON && xhr.responseJSON.message) {
+                            errMsg += xhr.responseJSON.message;
+                        } else if (xhr.status === 500) {
+                            errMsg += "Please check your M-Pesa credentials in .env and ensure LIVE_CREDENTIALS_URL, LIVE_STK_PUSH_URL, LIVE_MPESA_API_STK_CALLBACK are set.";
+                        }
+                        $('#stk_fail span').text(errMsg);
+                    });
             });
 
         }); // end doc ready
